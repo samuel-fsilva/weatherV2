@@ -284,3 +284,10 @@ function loadingCard() {
 function clearCard() {
   card.className = "";
 }
+function errorShow() {
+  let elems = getElem();
+  elems[0].innerHTML = "--°C";
+  elems[1].innerHTML = "Erro ao encontrar o local solicitado";
+  backgrounds.clearAll()
+  loadingCard()
+}

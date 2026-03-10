@@ -11,7 +11,10 @@ async function apiWeather(obj) {
     .then((response) => {
       if (!response.ok) {
         errorShow();
-        throw new Error("Network response was not ok");
+        console.log(response);
+        throw new Error(
+          `Network response was not ok. Error ${response.status}`,
+        );
       }
       return response.json();
     })
@@ -21,7 +24,7 @@ async function apiWeather(obj) {
 }
 
 function setApiData(data) {
-  clearCard()
+  clearCard();
   setMap(data.location.lat, data.location.lon);
   let elems = getElem();
   elems[0].innerText = `${Math.round(data.current.temp_c)}°C`;
@@ -30,8 +33,4 @@ function setApiData(data) {
   setBackground(data.current.condition.text, data.current.is_day);
 }
 
-function errorShow() {
-  let elems = getElem();
-  elems[0].innerHTML = "--°C";
-  elems[1].innerHTML = "Erro ao encontrar o local solicitado";
-}
+
