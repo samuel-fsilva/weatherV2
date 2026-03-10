@@ -2,9 +2,9 @@ async function apiWeather(obj) {
   let key = "ef6bfa3d38c54cfbaeb140315251106";
   let url;
   if (obj.type == "coords") {
-    url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${obj.latitude},${obj.longitude}&lang=pt`;
+    url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${obj.latitude},${obj.longitude}&lang=pt`;
   } else if (obj.type == "city") {
-    url = `http://api.weatherapi.com/v1/current.json?key=${key}&q=${obj.city}&lang=pt`;
+    url = `https://api.weatherapi.com/v1/current.json?key=${key}&q=${obj.city}&lang=pt`;
   }
 
   fetch(url)
