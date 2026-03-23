@@ -162,7 +162,7 @@ let insertIcon = {
     animation = setInterval(() => {
       if (
         parseInt(window.getComputedStyle(cloudIcons[0]).left) >
-          cloud2left - timeUntilBack &&
+        cloud2left - timeUntilBack &&
         !turningBack
       ) {
         cloudIcons[0].style.left = `${parseInt(window.getComputedStyle(cloudIcons[0]).left) - speed}px`;
@@ -174,7 +174,7 @@ let insertIcon = {
 
       if (
         parseInt(window.getComputedStyle(cloudIcons[0]).left) <
-          cloud1left + timeUntilBack &&
+        cloud1left + timeUntilBack &&
         turningBack
       ) {
         cloudIcons[0].style.left = `${parseInt(window.getComputedStyle(cloudIcons[0]).left) + speed}px`;
@@ -197,6 +197,13 @@ let insertIcon = {
     //moon.style.bottom = `${parseInt(window.getComputedStyle(card).width) * 0.1}px`;
 
     banner.appendChild(moon);
+
+    let moonLight = document.createElement("div");
+    moonLight.setAttribute("id", "moon-light");
+    console.log(moonLight)
+    animation = setInterval(() => {
+
+    }, 100)
   },
   rain: () => {
     let banner = createIconsBanner();

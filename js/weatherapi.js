@@ -24,6 +24,7 @@ async function apiWeather(obj) {
 }
 
 function setApiData(data) {
+  console.log(data)
   clearCard();
   setMap(data.location.lat, data.location.lon);
   let elems = getElem();
