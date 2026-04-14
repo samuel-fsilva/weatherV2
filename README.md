@@ -30,7 +30,7 @@ Live Demo: https://samuel-fsilva.github.io/weatherV2/
 - JavaScript (Vanilla)
 - Weather API ([WeatherAPI](https://www.weatherapi.com/))
 - Map library ([Leaflet + OpenStreetMap](https://leafletjs.com/index.html))
-- Geolocation API
+- Geolocation API (Browser Native)
 
 ---
 
