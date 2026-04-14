@@ -10,8 +10,6 @@ Live Demo: https://samuel-fsilva.github.io/weatherV2/
 
 ![Preview](./images/screenshots/image.png)
 ![Preview](./images/screenshots/image2.png)
-![Preview](./images/screenshots/image3.png)
-![Preview](./images/screenshots/image4.png)
 
 ---
 
