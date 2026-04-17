@@ -64,7 +64,6 @@ weatherV2/
 │── js/
 │   └── app.js
 │   └── dom.js
-│   └── location.js
 │   └── map.js
 │   └── weatherapi.js
 │── index.html
