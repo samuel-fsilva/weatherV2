@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
       },
       function (error) {
         deniedCard();
-        console.log("Erro ou permissão negada:", error.message);
+        console.error("Erro ou permissão negada:", error.message);
       },
     );
   }
