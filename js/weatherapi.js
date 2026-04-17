@@ -24,13 +24,11 @@ async function apiWeather(obj) {
 }
 
 function setApiData(data) {
-  console.log(data)
   clearCard();
   setMap(data.location.lat, data.location.lon);
   let elems = getElem();
   elems[0].innerText = `${Math.round(data.current.temp_c)}°C`;
   elems[1].innerText = `${data.location.name}, ${data.location.region} - ${data.location.country}, ${data.current.condition.text}`;
-
   setBackground(data.current.condition.text, data.current.is_day);
 }
 
